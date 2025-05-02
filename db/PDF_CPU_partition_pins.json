@@ -1,0 +1,421 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "IMEM_Read",
+					"strict" : false
+				},
+				{
+					"name" : "DMEM_Read_CPU",
+					"strict" : false
+				},
+				{
+					"name" : "DMEM_Write_CPU",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Address_Read[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Address_Read[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Address_Read[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Address_Read[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Address_Read[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Address_Read[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Address_Read[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Address_Read[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Address_Read[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Address_Read[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Address_Read[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Address_Read[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Address_Read[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Address_Read[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Address_Read[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Address_Read[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write_CPU[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write_CPU[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write_CPU[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write_CPU[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write_CPU[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write_CPU[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write_CPU[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write_CPU[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write_CPU[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write_CPU[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write_CPU[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write_CPU[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write_CPU[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write_CPU[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write_CPU[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write_CPU[15]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "DMEM_Read",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Data_Read[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Data_Read[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Data_Read[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Data_Read[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Data_Read[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Data_Read[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Data_Read[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Data_Read[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Data_Read[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Data_Read[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Data_Read[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Data_Read[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Data_Read[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DMEM_Write",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Write[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Data_Read[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Data_Read[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Imem_Data_Read[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read_CPU[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read_CPU[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read_CPU[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read_CPU[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read_CPU[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read_CPU[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read_CPU[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read_CPU[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read_CPU[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read_CPU[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read_CPU[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read_CPU[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read_CPU[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read_CPU[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read_CPU[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Dmem_Data_Read_CPU[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

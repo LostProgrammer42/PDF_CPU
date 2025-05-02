@@ -1,0 +1,33 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity cpu is port (
+			IReg_En, Mux_PC_Add_Sel, Mux_PC_In_Sel, PC_En, IAR_En, Acc_En : out std_logic;
+			IReg_Buffer_Sel, PC_Buffer_Sel, IAR_Buffer_Sel, Acc_Buffer_Sel: out std_logic:='0';
+			clk, rst: in std_logic; 
+			Addr_Sel: out std_logic;
+			Mux_Acc_In_Sel, ALU_Sel: out std_logic_vector(1 downto 0);
+			En,Rw: out std_logic;
+			IReg_Data_Out, PC_Data_Out: in std_logic_vector(15 downto 0):="0000000000000000";
+			Acc_Data_Out: in std_logic_vector(15 downto 0):="0000000000000000";
+			regSelect: in std_logic_vector(1 downto 0);
+			dispReg: out std_log	ic_vector(15 downto 0);
+			pause: in std_logic);
+end cpu;
+
+architecture cpuArch of cpu is
+	type state_type is (
+		rstState, pauseState, fetch,
+		halt, negate,
+		branch, brZero, brPos, brNeg, brInd,
+		cLoad, dLoad, iLoad,
+		dStore, iStore,
+		add, andd
+	);
+	signal state: state_type;
+	signal tick: unsigned(3 downto 0);
+	
+	signal this: std_logic_vector(15 downto 0);
+	
+begin

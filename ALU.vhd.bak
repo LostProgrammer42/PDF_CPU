@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity ALU is
+	port (a,b : in std_logic_vector(15 downto 0); 
+			ALU_Sel: in std_logic_vector(1 downto 0); --1 for Add, 0 for Negate, 2 for AND
+			c : out std_logic_vector(15 downto 0));
+end entity;
+
+architecture str of ALU is
+	component kogge_stone_adder_subtractor is
+		port(
+			A : in std_logic_vector(15 downto 0);
+			B : in std_logic_vector(15 downto 0);
+			M: in std_logic := '0';
+			S: out std_logic_vector(15 downto 0);
+			Cout: out std_logic);
+	end component;
+
+end architecture;

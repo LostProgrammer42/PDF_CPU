@@ -1,0 +1,1584 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Semester_4/Microprocessor_Project/simulation/modelsim
+Ealu
+Z1 w1745676649
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8E:/Semester_4/Microprocessor_Project/ALU.vhd
+Z5 FE:/Semester_4/Microprocessor_Project/ALU.vhd
+l0
+L4
+V5`mA;lST>>FLDlUhUJ<A[0
+!s100 Z`YnhGDP5C11mdl<>PClD3
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1746131434
+!i10b 1
+Z8 !s108 1746131434.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/ALU.vhd|
+Z10 !s107 E:/Semester_4/Microprocessor_Project/ALU.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Astr
+R2
+R3
+DEx4 work 3 alu 0 22 5`mA;lST>>FLDlUhUJ<A[0
+l43
+L10
+VhF:NcB@f:gSUe4z?9ZB^E0
+!s100 ZdcdO2h0]JT6P<7`YKF<c0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eand_2
+Z13 w1744906605
+R2
+R3
+R0
+Z14 8E:/Semester_4/Microprocessor_Project/Gates.vhdl
+Z15 FE:/Semester_4/Microprocessor_Project/Gates.vhdl
+l0
+L57
+VW2QdRhzH^gh`1Z4bifmBf3
+!s100 <1nD4fLK5FZ?LMSb4GDe>3
+R6
+31
+Z16 !s110 1746131432
+!i10b 1
+Z17 !s108 1746131432.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/Gates.vhdl|
+Z19 !s107 E:/Semester_4/Microprocessor_Project/Gates.vhdl|
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 and_2 0 22 W2QdRhzH^gh`1Z4bifmBf3
+l62
+L61
+VnDT8d]LGAGAW:`<`mSSSg3
+!s100 HhM:H^IAkB>a2X9?`<@_k0
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Econtrolpath
+Z20 w1746131403
+Z21 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+Z22 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R3
+R0
+Z23 8E:/Semester_4/Microprocessor_Project/Controlpath.vhd
+Z24 FE:/Semester_4/Microprocessor_Project/Controlpath.vhd
+l0
+L7
+VJE=Hiah>]2zJacHblD6GY1
+!s100 i9eE4;G;81J@=[>;`H7W]2
+R6
+31
+Z25 !s110 1746131435
+!i10b 1
+R8
+Z26 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/Controlpath.vhd|
+Z27 !s107 E:/Semester_4/Microprocessor_Project/Controlpath.vhd|
+!i113 1
+R11
+R12
+Acpuarch
+R21
+R22
+R2
+R3
+DEx4 work 11 controlpath 0 22 JE=Hiah>]2zJacHblD6GY1
+l31
+L18
+VRICaJ:[^fE6Yh8Deg]a6H3
+!s100 T2]8HizLHf:]cK`eV[F3z0
+R6
+31
+R25
+!i10b 1
+R8
+R26
+R27
+!i113 1
+R11
+R12
+Ecpu_testbench
+Z28 w1746130859
+R22
+R2
+R3
+R0
+Z29 8E:/Semester_4/Microprocessor_Project/Testbench.vhd
+Z30 FE:/Semester_4/Microprocessor_Project/Testbench.vhd
+l0
+L5
+VlZ4Zh0>7ace=>LA[z7b_e3
+!s100 dI[<=MI=i7j0EE2O5;OS@1
+R6
+31
+R25
+!i10b 1
+Z31 !s108 1746131435.000000
+Z32 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/Testbench.vhd|
+Z33 !s107 E:/Semester_4/Microprocessor_Project/Testbench.vhd|
+!i113 1
+R11
+R12
+Abehav
+R22
+R2
+R3
+DEx4 work 13 cpu_testbench 0 22 lZ4Zh0>7ace=>LA[z7b_e3
+l70
+L8
+VP5Tj0ECShd27<B68gcO;R1
+!s100 @hA<E0@DZ?zSKgSL59KLo2
+R6
+31
+R25
+!i10b 1
+R31
+R32
+R33
+!i113 1
+R11
+R12
+Ed_ff
+Z34 w1738387819
+R2
+R3
+R0
+Z35 8E:/Semester_4/Microprocessor_Project/D_Flip_Flop.vhd
+Z36 FE:/Semester_4/Microprocessor_Project/D_Flip_Flop.vhd
+l0
+L4
+VPSi15gJlUfa>HXkK=B@TA3
+!s100 HD3aXak1lXgzBg>QQ4i[:3
+R6
+31
+R7
+!i10b 1
+R8
+Z37 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/D_Flip_Flop.vhd|
+Z38 !s107 E:/Semester_4/Microprocessor_Project/D_Flip_Flop.vhd|
+!i113 1
+R11
+R12
+Abeh
+R2
+R3
+DEx4 work 4 d_ff 0 22 PSi15gJlUfa>HXkK=B@TA3
+l10
+L9
+Vg<5jOEIY]RcgELm2AhmED1
+!s100 aJUP;6m7L2jVg6me9e4I;1
+R6
+31
+R7
+!i10b 1
+R8
+R37
+R38
+!i113 1
+R11
+R12
+Edatapath
+Z39 w1746122275
+R2
+R3
+R0
+Z40 8E:/Semester_4/Microprocessor_Project/Datapath.vhd
+Z41 FE:/Semester_4/Microprocessor_Project/Datapath.vhd
+l0
+L5
+VHU2aa?WEb];31aU40RE]C1
+!s100 >g7kdIj;zXOSf8L7khBdZ2
+R6
+31
+R7
+!i10b 1
+R8
+Z42 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/Datapath.vhd|
+Z43 !s107 E:/Semester_4/Microprocessor_Project/Datapath.vhd|
+!i113 1
+R11
+R12
+Abeh
+R2
+R3
+DEx4 work 8 datapath 0 22 HU2aa?WEb];31aU40RE]C1
+l85
+L18
+VIbmTTm00HKOSJe]44_46X2
+!s100 MPNkF`HPIen]OlYVZ1Yoc2
+R6
+31
+R7
+!i10b 1
+R8
+R42
+R43
+!i113 1
+R11
+R12
+Edemux_8x1_16bit
+Z44 w1732987334
+R22
+R2
+R3
+R0
+Z45 8E:/Semester_4/Microprocessor_Project/8_X_1_Demux_16_Bit.vhd
+Z46 FE:/Semester_4/Microprocessor_Project/8_X_1_Demux_16_Bit.vhd
+l0
+L5
+VV82Z8iXLKch=:3Wh^X=P41
+!s100 k3Z=Noj25TFkU0ZMjCWCB1
+R6
+31
+Z47 !s110 1746131433
+!i10b 1
+Z48 !s108 1746131433.000000
+Z49 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/8_X_1_Demux_16_Bit.vhd|
+Z50 !s107 E:/Semester_4/Microprocessor_Project/8_X_1_Demux_16_Bit.vhd|
+!i113 1
+R11
+R12
+Abeh
+R22
+R2
+R3
+DEx4 work 15 demux_8x1_16bit 0 22 V82Z8iXLKch=:3Wh^X=P41
+l12
+L11
+Vng6;hK4M292;5UYSDBH[<3
+!s100 fV0WQ@I6?`ZecoVoWCSze3
+R6
+31
+R47
+!i10b 1
+R48
+R49
+R50
+!i113 1
+R11
+R12
+Edemux_8x1_1bit
+Z51 w1745696722
+R2
+R3
+R0
+Z52 8E:/Semester_4/Microprocessor_Project/8_X_1_Demux_1_Bit.vhd
+Z53 FE:/Semester_4/Microprocessor_Project/8_X_1_Demux_1_Bit.vhd
+l0
+L4
+VLACI_Ez;SQJ_g98NFCe5l3
+!s100 VcenM:><09H58C^>C`cg]2
+R6
+31
+R25
+!i10b 1
+R31
+Z54 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/8_X_1_Demux_1_Bit.vhd|
+Z55 !s107 E:/Semester_4/Microprocessor_Project/8_X_1_Demux_1_Bit.vhd|
+!i113 1
+R11
+R12
+Abeh
+R2
+R3
+DEx4 work 14 demux_8x1_1bit 0 22 LACI_Ez;SQJ_g98NFCe5l3
+l13
+L12
+VXT`>h[7ER^KIN<848geGi0
+!s100 LFMU:6IWhUSRnDalI:kaI3
+R6
+31
+R25
+!i10b 1
+R31
+R54
+R55
+!i113 1
+R11
+R12
+Efull_adder
+Z56 w1744906691
+Z57 DPx4 work 5 gates 0 22 NcY4A7TbR^WLRT`2c:]N[1
+R2
+R3
+R0
+Z58 8E:/Semester_4/Microprocessor_Project/full_adder.vhd
+Z59 FE:/Semester_4/Microprocessor_Project/full_adder.vhd
+l0
+L6
+VCnRY2Z^B<n7>7:0OeJIJA3
+!s100 Z;K`_MCM=Z:Po[VY`a?ck1
+R6
+31
+R25
+!i10b 1
+R31
+Z60 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/full_adder.vhd|
+Z61 !s107 E:/Semester_4/Microprocessor_Project/full_adder.vhd|
+!i113 1
+R11
+R12
+Astruct
+R57
+R2
+R3
+DEx4 work 10 full_adder 0 22 CnRY2Z^B<n7>7:0OeJIJA3
+l14
+L12
+V[iJhdd_EIAOSF^bEEOgVP3
+!s100 HnzSJFe:<7@ICT6I1QDm;3
+R6
+31
+R25
+!i10b 1
+R31
+R60
+R61
+!i113 1
+R11
+R12
+Pgates
+R2
+R3
+R13
+R0
+R14
+R15
+l0
+L7
+VNcY4A7TbR^WLRT`2c:]N[1
+!s100 Dc>f1MeC:9iI_HnNzJ;KT1
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Ehalf_adder
+R13
+R2
+R3
+R0
+R14
+R15
+l0
+L124
+VIZiX8mi96cJ??CnPO^U<C3
+!s100 U;nQkfQTnI7V?fejYIM<g2
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 10 half_adder 0 22 IZiX8mi96cJ??CnPO^U<C3
+l129
+L128
+VCD;QIVbkQ<kd@U[I6UILl1
+!s100 E9g6H`e<YSE@nSQ7XJJ0D0
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Einverter
+R13
+R2
+R3
+R0
+R14
+R15
+l0
+L45
+V^STYmNzH_F58ZVT>FF?cU2
+!s100 S3joTbdXW90XOjU4i1V^60
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 8 inverter 0 22 ^STYmNzH_F58ZVT>FF?cU2
+l50
+L49
+VY38KWB:XEkc0^3YzW57dj2
+!s100 YS6CiXJRJ@EE5??nNB03h1
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Ekogge_stone
+R34
+R22
+R2
+R3
+R0
+Z62 8E:/Semester_4/Microprocessor_Project/kogge_stone.vhd
+Z63 FE:/Semester_4/Microprocessor_Project/kogge_stone.vhd
+l0
+L5
+Vc4TJQUloFk]=HOXF;FaJO3
+!s100 i5]G^T_7gK>kh7M?1l3NZ0
+R6
+31
+R47
+!i10b 1
+R48
+Z64 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/kogge_stone.vhd|
+Z65 !s107 E:/Semester_4/Microprocessor_Project/kogge_stone.vhd|
+!i113 1
+R11
+R12
+Abehav
+R22
+R2
+R3
+DEx4 work 11 kogge_stone 0 22 c4TJQUloFk]=HOXF;FaJO3
+l39
+L15
+VFM@i=md<;MG]nL33B5IEG1
+!s100 >JKHi9==Sj94?bFNa@5n81
+R6
+31
+R47
+!i10b 1
+R48
+R64
+R65
+!i113 1
+R11
+R12
+Ekogge_stone_adder_subtractor
+R34
+R22
+R2
+R3
+R0
+Z66 8E:/Semester_4/Microprocessor_Project/Kogge_stone_adder_subtractor.vhd
+Z67 FE:/Semester_4/Microprocessor_Project/Kogge_stone_adder_subtractor.vhd
+l0
+L5
+VfE_bVjG]6ackWfcohB`Oz0
+!s100 f[O9D6i[L6DVGO3Ddn_f;0
+R6
+31
+R47
+!i10b 1
+R48
+Z68 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/Kogge_stone_adder_subtractor.vhd|
+Z69 !s107 E:/Semester_4/Microprocessor_Project/Kogge_stone_adder_subtractor.vhd|
+!i113 1
+R11
+R12
+Astr
+R22
+R2
+R3
+DEx4 work 28 kogge_stone_adder_subtractor 0 22 fE_bVjG]6ackWfcohB`Oz0
+l25
+L14
+V2@h1eR@<OeZ9Be?lHOZN82
+!s100 kkMb>F]cH3XOB@Q6?IzK81
+R6
+31
+R47
+!i10b 1
+R48
+R68
+R69
+!i113 1
+R11
+R12
+Ekogge_stone_node
+R34
+R22
+R2
+R3
+R0
+Z70 8E:/Semester_4/Microprocessor_Project/kogge_stone_node.vhd
+Z71 FE:/Semester_4/Microprocessor_Project/kogge_stone_node.vhd
+l0
+L5
+VIC7I4`cm8Wz@zzgeFnQZO1
+!s100 NPPNW;S:PNHVkUB8TZnZ[3
+R6
+31
+R47
+!i10b 1
+R48
+Z72 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/kogge_stone_node.vhd|
+Z73 !s107 E:/Semester_4/Microprocessor_Project/kogge_stone_node.vhd|
+!i113 1
+R11
+R12
+Astruct
+R22
+R2
+R3
+DEx4 work 16 kogge_stone_node 0 22 IC7I4`cm8Wz@zzgeFnQZO1
+l13
+L12
+VF<Q@67UI3Mj<bcY7C[:gC1
+!s100 LI6Nk9;CCTC5]K@30RGo]3
+R6
+31
+R47
+!i10b 1
+R48
+R72
+R73
+!i113 1
+R11
+R12
+Emultiplier
+Z74 w1745653264
+R57
+R2
+R3
+R0
+Z75 8E:/Semester_4/Microprocessor_Project/Multiplier.vhd
+Z76 FE:/Semester_4/Microprocessor_Project/Multiplier.vhd
+l0
+L6
+V=n5Hn]LJE_@]]g2oR@Im^3
+!s100 M6_2NY9R2oFMJEdI_JSSM1
+R6
+31
+R25
+!i10b 1
+R31
+Z77 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/Multiplier.vhd|
+Z78 !s107 E:/Semester_4/Microprocessor_Project/Multiplier.vhd|
+!i113 1
+R11
+R12
+Astruct
+R57
+R2
+R3
+DEx4 work 10 multiplier 0 22 =n5Hn]LJE_@]]g2oR@Im^3
+l40
+L12
+VQaH3`z0R=:^^U3KY32NR]1
+!s100 _8U2RmlRODJP?S?oa<OMI1
+R6
+31
+R25
+!i10b 1
+R31
+R77
+R78
+!i113 1
+R11
+R12
+Emux_2x1
+R34
+R2
+R3
+R0
+Z79 8E:/Semester_4/Microprocessor_Project/2_X_1_Mux.vhd
+Z80 FE:/Semester_4/Microprocessor_Project/2_X_1_Mux.vhd
+l0
+L4
+V[E_eOiTbONORXPV_09lQS0
+!s100 MD27KKaQo`el2`5Cdh>C@3
+R6
+31
+R7
+!i10b 1
+R8
+Z81 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/2_X_1_Mux.vhd|
+Z82 !s107 E:/Semester_4/Microprocessor_Project/2_X_1_Mux.vhd|
+!i113 1
+R11
+R12
+Abeh
+R2
+R3
+DEx4 work 7 mux_2x1 0 22 [E_eOiTbONORXPV_09lQS0
+l11
+L10
+V@dMHEGA0]oc]d2Wh@Zn^[1
+!s100 >hO[;k?W_Hh>eIRg<V4ZC2
+R6
+31
+R7
+!i10b 1
+R8
+R81
+R82
+!i113 1
+R11
+R12
+Emux_2x1_16bit
+R34
+R2
+R3
+R0
+Z83 8E:/Semester_4/Microprocessor_Project/2_X_1_Mux_16_Bit.vhd
+Z84 FE:/Semester_4/Microprocessor_Project/2_X_1_Mux_16_Bit.vhd
+l0
+L4
+VaZlRfA<eA;cPfE]6eK9ab2
+!s100 :gaW0jlEdT_o2Oi4jFLih0
+R6
+31
+R7
+!i10b 1
+R8
+Z85 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/2_X_1_Mux_16_Bit.vhd|
+Z86 !s107 E:/Semester_4/Microprocessor_Project/2_X_1_Mux_16_Bit.vhd|
+!i113 1
+R11
+R12
+Abeh
+R2
+R3
+DEx4 work 13 mux_2x1_16bit 0 22 aZlRfA<eA;cPfE]6eK9ab2
+l11
+L10
+VMCX7>R5NZ0lWB5Y8>gW5Q1
+!s100 7JYMIOoClYk?lmcOJnSJo2
+R6
+31
+R7
+!i10b 1
+R8
+R85
+R86
+!i113 1
+R11
+R12
+Emux_2x1_3bit
+Z87 w1745653829
+R2
+R3
+R0
+Z88 8E:/Semester_4/Microprocessor_Project/2_X_1_Mux_3_Bit.vhd
+Z89 FE:/Semester_4/Microprocessor_Project/2_X_1_Mux_3_Bit.vhd
+l0
+L4
+VSB9hlAY8@<lEnm=j;d3VD0
+!s100 _<I2<:Q9WDPeaXE:l5HL60
+R6
+31
+R7
+!i10b 1
+R8
+Z90 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/2_X_1_Mux_3_Bit.vhd|
+Z91 !s107 E:/Semester_4/Microprocessor_Project/2_X_1_Mux_3_Bit.vhd|
+!i113 1
+R11
+R12
+Abeh
+R2
+R3
+DEx4 work 12 mux_2x1_3bit 0 22 SB9hlAY8@<lEnm=j;d3VD0
+l11
+L10
+VC8MFg@FNYDMhIR_e7C>W[0
+!s100 bdg[kW5ScOMHJ5K=M0Khk0
+R6
+31
+R7
+!i10b 1
+R8
+R90
+R91
+!i113 1
+R11
+R12
+Emux_4x1_16bit
+R34
+R22
+R2
+R3
+R0
+Z92 8E:/Semester_4/Microprocessor_Project/4_X_1_Mux_16_bit.vhd
+Z93 FE:/Semester_4/Microprocessor_Project/4_X_1_Mux_16_bit.vhd
+l0
+L5
+VincLG8509J<X@eXQJVzI42
+!s100 j3LA6QlOAmkiLZH]`SQUf2
+R6
+31
+R7
+!i10b 1
+R8
+Z94 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/4_X_1_Mux_16_bit.vhd|
+Z95 !s107 E:/Semester_4/Microprocessor_Project/4_X_1_Mux_16_bit.vhd|
+!i113 1
+R11
+R12
+Abeh
+R22
+R2
+R3
+DEx4 work 13 mux_4x1_16bit 0 22 incLG8509J<X@eXQJVzI42
+l12
+L11
+VeaK@PCa]HOhPK5AE=ZP4:3
+!s100 eRUfcIRAk<S`PaTC8HEc?3
+R6
+31
+R7
+!i10b 1
+R8
+R94
+R95
+!i113 1
+R11
+R12
+Emux_8x1_16bit
+Z96 w1732987187
+R22
+R2
+R3
+R0
+Z97 8E:/Semester_4/Microprocessor_Project/8_X_1_Mux_16_Bit.vhd
+Z98 FE:/Semester_4/Microprocessor_Project/8_X_1_Mux_16_Bit.vhd
+l0
+L5
+VNihPJD8ABD86NNh[3>mX71
+!s100 bZ`B3?<47^FUK2;]XL8S_0
+R6
+31
+R47
+!i10b 1
+R48
+Z99 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/8_X_1_Mux_16_Bit.vhd|
+Z100 !s107 E:/Semester_4/Microprocessor_Project/8_X_1_Mux_16_Bit.vhd|
+!i113 1
+R11
+R12
+Abeh
+R22
+R2
+R3
+DEx4 work 13 mux_8x1_16bit 0 22 NihPJD8ABD86NNh[3>mX71
+l12
+L11
+Vi=;M4j;jU_5Sa_FjU<ATd3
+!s100 Ugj><?66U78k:7La@ZVKo2
+R6
+31
+R47
+!i10b 1
+R48
+R99
+R100
+!i113 1
+R11
+R12
+Enand_2
+R13
+R2
+R3
+R0
+R14
+R15
+l0
+L68
+V7Q=aZ>7Mzize[[IfQRQ;`2
+!s100 bRA[c>EJKJWNgCR8ghUC72
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 6 nand_2 0 22 7Q=aZ>7Mzize[[IfQRQ;`2
+l73
+L72
+V?4CWin9:[TT0?g`jLS0E12
+!s100 I_RPhB=oe82f_Rij[[8JF2
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Enor_2
+R13
+R2
+R3
+R0
+R14
+R15
+l0
+L90
+V3?]TGiHba`>]BD;kULm?^3
+!s100 edYUJ4gTm_U:i]N@4Q=Gg3
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 nor_2 0 22 3?]TGiHba`>]BD;kULm?^3
+l95
+L94
+VNFd;eVo`>0To8@;Oh4diC1
+!s100 ESBi5;Q?X6mLo`Q3JWZ4Q0
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Eor_2
+R13
+R2
+R3
+R0
+R14
+R15
+l0
+L79
+V>IC]i[S3fUX<m=i^H@9eA0
+!s100 Be23a45mg=gMiVXM<6Peg0
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 4 or_2 0 22 >IC]i[S3fUX<m=i^H@9eA0
+l84
+L83
+VATF[^b3mj8cbo9?98=TRF0
+!s100 8JcIMFHmJzkaC?5jW]DnS3
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Epdf_cpu
+Z101 w1746124722
+R22
+R2
+R3
+R0
+Z102 8E:/Semester_4/Microprocessor_Project/PDF_CPU.vhd
+Z103 FE:/Semester_4/Microprocessor_Project/PDF_CPU.vhd
+l0
+L5
+VmeL^SOlRXR_Dd2hciM<0B3
+!s100 FMgFZ:>;^=0iz>OPiV1`]2
+R6
+31
+R25
+!i10b 1
+R31
+Z104 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/PDF_CPU.vhd|
+Z105 !s107 E:/Semester_4/Microprocessor_Project/PDF_CPU.vhd|
+!i113 1
+R11
+R12
+Apdf
+R22
+R2
+R3
+DEx4 work 7 pdf_cpu 0 22 meL^SOlRXR_Dd2hciM<0B3
+l68
+L14
+V8B67mJ:74XH50__hnZ<=N3
+!s100 @zEfW0lF2AR`InI3g6Ufk0
+R6
+31
+R25
+!i10b 1
+R31
+R104
+R105
+!i113 1
+R11
+R12
+Epipo_register
+R34
+R2
+R3
+R0
+Z106 8E:/Semester_4/Microprocessor_Project/PIPO_Register.vhd
+Z107 FE:/Semester_4/Microprocessor_Project/PIPO_Register.vhd
+l0
+L4
+VgK2MQViARVD49?=UC@8o:1
+!s100 jgoUc4RUHH:k5G[dNaRF^3
+R6
+31
+R47
+!i10b 1
+R48
+Z108 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/PIPO_Register.vhd|
+Z109 !s107 E:/Semester_4/Microprocessor_Project/PIPO_Register.vhd|
+!i113 1
+R11
+R12
+Aha
+R2
+R3
+DEx4 work 13 pipo_register 0 22 gK2MQViARVD49?=UC@8o:1
+l22
+L10
+Vo[3n2Sc]68PiEa5fFCgkY3
+!s100 zZQ<0Ca[gVH;KXd0MR6]c3
+R6
+31
+R47
+!i10b 1
+R48
+R108
+R109
+!i113 1
+R11
+R12
+Epipo_register_3_bit
+Z110 w1745652996
+R2
+R3
+R0
+Z111 8E:/Semester_4/Microprocessor_Project/PIPO_Register_3_Bit.vhd
+Z112 FE:/Semester_4/Microprocessor_Project/PIPO_Register_3_Bit.vhd
+l0
+L4
+Vdoh^[KAaf13E;YC^HamgJ2
+!s100 lnD<V4eD9C2=cl[czkVgG0
+R6
+31
+R7
+!i10b 1
+R8
+Z113 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/PIPO_Register_3_Bit.vhd|
+Z114 !s107 E:/Semester_4/Microprocessor_Project/PIPO_Register_3_Bit.vhd|
+!i113 1
+R11
+R12
+Aha
+R2
+R3
+DEx4 work 19 pipo_register_3_bit 0 22 doh^[KAaf13E;YC^HamgJ2
+l22
+L10
+V4K^M[XF<=o@7o8DIAjlS43
+!s100 C?_nDl[Tg0[>Vm@mh<8Af2
+R6
+31
+R7
+!i10b 1
+R8
+R113
+R114
+!i113 1
+R11
+R12
+Epostprocessing
+R34
+R22
+R2
+R3
+R0
+Z115 8E:/Semester_4/Microprocessor_Project/postprocessing.vhd
+Z116 FE:/Semester_4/Microprocessor_Project/postprocessing.vhd
+l0
+L5
+VUm2?blATME0z4Xik56g]k2
+!s100 Kk?WdGeGeaND;g[l0Dl6K0
+R6
+31
+R47
+!i10b 1
+R48
+Z117 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/postprocessing.vhd|
+Z118 !s107 E:/Semester_4/Microprocessor_Project/postprocessing.vhd|
+!i113 1
+R11
+R12
+Abehav
+R22
+R2
+R3
+DEx4 work 14 postprocessing 0 22 Um2?blATME0z4Xik56g]k2
+l16
+L14
+VKHCNF9=HC4gQb7:=jF5?n1
+!s100 k`UBQ0CF`nV;V]32]6K^=2
+R6
+31
+R47
+!i10b 1
+R48
+R117
+R118
+!i113 1
+R11
+R12
+Epreprocessing
+R34
+R22
+R2
+R3
+R0
+Z119 8E:/Semester_4/Microprocessor_Project/preprocessing.vhd
+Z120 FE:/Semester_4/Microprocessor_Project/preprocessing.vhd
+l0
+L5
+VP>fl;:oaSLgjlA]aVN_kW1
+!s100 ]?>WkYVUL]SdhCUW@gj_33
+R6
+31
+R47
+!i10b 1
+R48
+Z121 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/preprocessing.vhd|
+Z122 !s107 E:/Semester_4/Microprocessor_Project/preprocessing.vhd|
+!i113 1
+R11
+R12
+Abehav
+R22
+R2
+R3
+DEx4 work 13 preprocessing 0 22 P>fl;:oaSLgjlA]aVN_kW1
+l13
+L12
+VeMU1gEMIm99a1<bkVjof:3
+!s100 ]`PN2<@Ve5X2ROZ0f]FI53
+R6
+31
+R47
+!i10b 1
+R48
+R121
+R122
+!i113 1
+R11
+R12
+Eregister_file
+Z123 w1745696595
+R2
+R3
+R0
+Z124 8E:/Semester_4/Microprocessor_Project/Register_File.vhd
+Z125 FE:/Semester_4/Microprocessor_Project/Register_File.vhd
+l0
+L4
+VO2`bfP6U6ia`XHY2HjRKB0
+!s100 AnJm_>I9IOY6X[;<L]Mj`2
+R6
+31
+R47
+!i10b 1
+R48
+Z126 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/Register_File.vhd|
+Z127 !s107 E:/Semester_4/Microprocessor_Project/Register_File.vhd|
+!i113 1
+R11
+R12
+Astr
+R2
+R3
+DEx4 work 13 register_file 0 22 O2`bfP6U6ia`XHY2HjRKB0
+l43
+L12
+VPMHO[<[4P^Q>R:8PLgJ2:0
+!s100 @7dUCH41EHLb;nkeg8Z680
+R6
+31
+R47
+!i10b 1
+R48
+R126
+R127
+!i113 1
+R11
+R12
+Ering_buffer
+Z128 w1746124659
+R2
+R3
+R0
+Z129 8E:/Semester_4/Microprocessor_Project/Data_Memory.vhd
+Z130 FE:/Semester_4/Microprocessor_Project/Data_Memory.vhd
+l0
+L4
+VmPBVF_EBZ28[[nU7G=VJi0
+!s100 G1IIT@<n<Khc67gfEJ]Ab1
+R6
+31
+R25
+!i10b 1
+R31
+Z131 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/Data_Memory.vhd|
+Z132 !s107 E:/Semester_4/Microprocessor_Project/Data_Memory.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 11 ring_buffer 0 22 mPBVF_EBZ28[[nU7G=VJi0
+l58
+L34
+Vjdd02Gd<o9WD6Szo=f2jm2
+!s100 :XU01jA]hOE2:@i5_^IWl3
+R6
+31
+R25
+!i10b 1
+R31
+R131
+R132
+!i113 1
+R11
+R12
+Eshift_eight
+Z133 w1744909812
+R2
+R3
+R0
+Z134 8E:/Semester_4/Microprocessor_Project/shift_eight.vhd
+Z135 FE:/Semester_4/Microprocessor_Project/shift_eight.vhd
+l0
+L4
+VQ7;XOQ]QB6KbR^PI3VfKh2
+!s100 2]Hh1ZKT`AQ@]P;gDa?@J3
+R6
+31
+R47
+!i10b 1
+R17
+Z136 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/shift_eight.vhd|
+Z137 !s107 E:/Semester_4/Microprocessor_Project/shift_eight.vhd|
+!i113 1
+R11
+R12
+Adesign
+R2
+R3
+DEx4 work 11 shift_eight 0 22 Q7;XOQ]QB6KbR^PI3VfKh2
+l20
+L12
+VPbCYl>hV4Cz5nlCoiRSlC1
+!s100 V3ZnhobdcVS_BOFA[znRX1
+R6
+31
+R47
+!i10b 1
+R17
+R136
+R137
+!i113 1
+R11
+R12
+Eshift_four
+Z138 w1744909773
+R2
+R3
+R0
+Z139 8E:/Semester_4/Microprocessor_Project/shift_four.vhd
+Z140 FE:/Semester_4/Microprocessor_Project/shift_four.vhd
+l0
+L4
+VO[mJNXh7B?CE1E[LfIL2o1
+!s100 D2zDgHKXgZAceR_CE1JDE1
+R6
+31
+R7
+!i10b 1
+R8
+Z141 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/shift_four.vhd|
+Z142 !s107 E:/Semester_4/Microprocessor_Project/shift_four.vhd|
+!i113 1
+R11
+R12
+Adesign
+R2
+R3
+DEx4 work 10 shift_four 0 22 O[mJNXh7B?CE1E[LfIL2o1
+l20
+L12
+V0HKof[`mjS>jDz]0GoTg[3
+!s100 3g@6HVWblB@TLl4i6]jX[0
+R6
+31
+R7
+!i10b 1
+R8
+R141
+R142
+!i113 1
+R11
+R12
+Eshift_one
+Z143 w1744909652
+R2
+R3
+R0
+Z144 8E:/Semester_4/Microprocessor_Project/shift_one.vhd
+Z145 FE:/Semester_4/Microprocessor_Project/shift_one.vhd
+l0
+L4
+VgPMk1;O:KAGFGR=0zf=W=2
+!s100 >jIHBIOZ4oRJXLhA0j[E`2
+R6
+31
+R47
+!i10b 1
+R48
+Z146 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/shift_one.vhd|
+Z147 !s107 E:/Semester_4/Microprocessor_Project/shift_one.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 9 shift_one 0 22 gPMk1;O:KAGFGR=0zf=W=2
+l20
+L12
+VfJYR4HL6H_>ni^c_2^f6V1
+!s100 i;9PoRKl62n0f3M`M]C`z1
+R6
+31
+R47
+!i10b 1
+R48
+R146
+R147
+!i113 1
+R11
+R12
+Eshift_two
+Z148 w1744909752
+R2
+R3
+R0
+Z149 8E:/Semester_4/Microprocessor_Project/shift_two.vhd
+Z150 FE:/Semester_4/Microprocessor_Project/shift_two.vhd
+l0
+L4
+V[K5ioM_BPZXU23k@_n5Vj2
+!s100 9d0c27nimL1T;^U<hHa?33
+R6
+31
+R7
+!i10b 1
+R8
+Z151 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/shift_two.vhd|
+Z152 !s107 E:/Semester_4/Microprocessor_Project/shift_two.vhd|
+!i113 1
+R11
+R12
+Adesign
+R2
+R3
+DEx4 work 9 shift_two 0 22 [K5ioM_BPZXU23k@_n5Vj2
+l20
+L12
+Vcn>WlNkkCAcH7nJmoF:_E2
+!s100 3?=MO6H_Kn4i2gf?S:N<j1
+R6
+31
+R7
+!i10b 1
+R8
+R151
+R152
+!i113 1
+R11
+R12
+Eshifter
+Z153 w1744909791
+R2
+R3
+R0
+Z154 8E:/Semester_4/Microprocessor_Project/Shifter.vhd
+Z155 FE:/Semester_4/Microprocessor_Project/Shifter.vhd
+l0
+L5
+V9aX=G0Ra9Y7:=YKin6FNX0
+!s100 :67IlPQ@eJ30VZdz690`Q1
+R6
+31
+R7
+!i10b 1
+R8
+Z156 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/Shifter.vhd|
+Z157 !s107 E:/Semester_4/Microprocessor_Project/Shifter.vhd|
+!i113 1
+R11
+R12
+Adesign
+R2
+R3
+DEx4 work 7 shifter 0 22 9aX=G0Ra9Y7:=YKin6FNX0
+l47
+L13
+Va28^4iP[cQR4?>U9Y^kKO1
+!s100 gKjlf[9NaRc9;Haj:j78P2
+R6
+31
+R7
+!i10b 1
+R8
+R156
+R157
+!i113 1
+R11
+R12
+Esixteen_bit_full_adder
+Z158 w1744906496
+R57
+R2
+R3
+R0
+Z159 8E:/Semester_4/Microprocessor_Project/sixteen_bit_full_adder.vhd
+Z160 FE:/Semester_4/Microprocessor_Project/sixteen_bit_full_adder.vhd
+l0
+L6
+V2k<J0<m`KQNI8RGYVzkD81
+!s100 IeOA;[e3lRQW6J74Y6On^2
+R6
+31
+R25
+!i10b 1
+R31
+Z161 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/sixteen_bit_full_adder.vhd|
+Z162 !s107 E:/Semester_4/Microprocessor_Project/sixteen_bit_full_adder.vhd|
+!i113 1
+R11
+R12
+Astruct
+R57
+R2
+R3
+DEx4 work 22 sixteen_bit_full_adder 0 22 2k<J0<m`KQNI8RGYVzkD81
+l21
+L14
+V04D?d16:<]FfJYld3ZMcb3
+!s100 801Y[`RbThf]ozcQmFlIZ1
+R6
+31
+R25
+!i10b 1
+R31
+R161
+R162
+!i113 1
+R11
+R12
+Exnor_2
+R13
+R2
+R3
+R0
+R14
+R15
+l0
+L113
+VYmZa`=[Sj]6Zh9_O7]F;L0
+!s100 SMA^OIVGhoiKW^3FaJ8oW3
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 6 xnor_2 0 22 YmZa`=[Sj]6Zh9_O7]F;L0
+l118
+L117
+VAJO?a^^jGBIX`G]K^jl@P2
+!s100 =aKk4IJ>H;6]KzcaGm^Mn0
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Exor_2
+R13
+R2
+R3
+R0
+R14
+R15
+l0
+L102
+VDUd5fH`?6?dZ[>AnHc54;2
+!s100 h::V4HH0c4?lKoYnW6M?E3
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 xor_2 0 22 DUd5fH`?6?dZ[>AnHc54;2
+l107
+L106
+VT`Lnd3[S1KOT?Q^d?zomG2
+!s100 85OK8@mo8d3=fmz<5BnRf2
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Ezero_padding
+R158
+R57
+R2
+R3
+R0
+Z163 8E:/Semester_4/Microprocessor_Project/zero_padding.vhd
+Z164 FE:/Semester_4/Microprocessor_Project/zero_padding.vhd
+l0
+L6
+V60YIL=5SWXi27DH?Zn4aN3
+!s100 YUWbVoYI_Y<AcmM[HE1TN1
+R6
+31
+R25
+!i10b 1
+R31
+Z165 !s90 -reportprogress|300|-93|-work|work|E:/Semester_4/Microprocessor_Project/zero_padding.vhd|
+Z166 !s107 E:/Semester_4/Microprocessor_Project/zero_padding.vhd|
+!i113 1
+R11
+R12
+Astruct
+R57
+R2
+R3
+DEx4 work 12 zero_padding 0 22 60YIL=5SWXi27DH?Zn4aN3
+l15
+L13
+V;S8iX;izJY=ETDoF[[8W23
+!s100 [gDh;a:W5@_73CDKF]Vn50
+R6
+31
+R25
+!i10b 1
+R31
+R165
+R166
+!i113 1
+R11
+R12

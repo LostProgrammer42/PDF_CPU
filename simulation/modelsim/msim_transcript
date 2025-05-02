@@ -1,0 +1,626 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do PDF_CPU_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/Gates.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:32 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/Gates.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package Gates
+# -- Compiling entity INVERTER
+# -- Compiling architecture Equations of INVERTER
+# -- Compiling entity AND_2
+# -- Compiling architecture Equations of AND_2
+# -- Compiling entity NAND_2
+# -- Compiling architecture Equations of NAND_2
+# -- Compiling entity OR_2
+# -- Compiling architecture Equations of OR_2
+# -- Compiling entity NOR_2
+# -- Compiling architecture Equations of NOR_2
+# -- Compiling entity XOR_2
+# -- Compiling architecture Equations of XOR_2
+# -- Compiling entity XNOR_2
+# -- Compiling architecture Equations of XNOR_2
+# -- Compiling entity HALF_ADDER
+# -- Compiling architecture Equations of HALF_ADDER
+# End time: 02:00:32 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/shift_eight.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:32 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/shift_eight.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_eight
+# -- Compiling architecture design of shift_eight
+# End time: 02:00:33 on May 02,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/8_X_1_Mux_16_Bit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:33 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/8_X_1_Mux_16_Bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux_8x1_16bit
+# -- Compiling architecture beh of mux_8x1_16bit
+# End time: 02:00:33 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/8_X_1_Demux_16_Bit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:33 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/8_X_1_Demux_16_Bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity demux_8x1_16bit
+# -- Compiling architecture beh of demux_8x1_16bit
+# End time: 02:00:33 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/Register_File.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:33 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity register_file
+# -- Compiling architecture str of register_file
+# End time: 02:00:33 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/shift_one.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:33 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/shift_one.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_one
+# -- Compiling architecture struct of shift_one
+# End time: 02:00:33 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/preprocessing.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:33 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/preprocessing.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity preprocessing
+# -- Compiling architecture behav of preprocessing
+# End time: 02:00:33 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/postprocessing.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:33 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/postprocessing.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity postprocessing
+# -- Compiling architecture behav of postprocessing
+# End time: 02:00:33 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/PIPO_Register.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:33 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/PIPO_Register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity pipo_register
+# -- Compiling architecture ha of pipo_register
+# End time: 02:00:33 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/kogge_stone_node.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:33 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/kogge_stone_node.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity kogge_stone_node
+# -- Compiling architecture struct of kogge_stone_node
+# End time: 02:00:33 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/Kogge_stone_adder_subtractor.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:33 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/Kogge_stone_adder_subtractor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity kogge_stone_adder_subtractor
+# -- Compiling architecture str of kogge_stone_adder_subtractor
+# End time: 02:00:33 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/kogge_stone.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:33 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/kogge_stone.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity kogge_stone
+# -- Compiling architecture behav of kogge_stone
+# End time: 02:00:33 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/D_Flip_Flop.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:34 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/D_Flip_Flop.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity d_ff
+# -- Compiling architecture beh of d_ff
+# End time: 02:00:34 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/4_X_1_Mux_16_bit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:34 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/4_X_1_Mux_16_bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux_4x1_16bit
+# -- Compiling architecture beh of mux_4x1_16bit
+# End time: 02:00:34 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/2_X_1_Mux_16_Bit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:34 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/2_X_1_Mux_16_Bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_2x1_16bit
+# -- Compiling architecture beh of mux_2x1_16bit
+# End time: 02:00:34 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/2_X_1_Mux.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:34 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/2_X_1_Mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_2x1
+# -- Compiling architecture beh of mux_2x1
+# End time: 02:00:34 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/Datapath.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:34 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/Datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity datapath
+# -- Compiling architecture beh of datapath
+# End time: 02:00:34 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/ALU.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:34 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ALU
+# -- Compiling architecture str of ALU
+# End time: 02:00:34 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/shift_four.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:34 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/shift_four.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_four
+# -- Compiling architecture design of shift_four
+# End time: 02:00:34 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/shift_two.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:34 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/shift_two.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_two
+# -- Compiling architecture design of shift_two
+# End time: 02:00:34 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/Shifter.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:34 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/Shifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shifter
+# -- Compiling architecture design of shifter
+# End time: 02:00:34 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/PIPO_Register_3_Bit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:34 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/PIPO_Register_3_Bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity pipo_register_3_bit
+# -- Compiling architecture ha of pipo_register_3_bit
+# End time: 02:00:34 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/2_X_1_Mux_3_Bit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:34 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/2_X_1_Mux_3_Bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_2x1_3bit
+# -- Compiling architecture beh of mux_2x1_3bit
+# End time: 02:00:34 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/Controlpath.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:34 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/Controlpath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Compiling entity Controlpath
+# -- Compiling architecture cpuArch of Controlpath
+# End time: 02:00:35 on May 02,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/Data_Memory.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:35 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/Data_Memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ring_buffer
+# -- Compiling architecture rtl of ring_buffer
+# End time: 02:00:35 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/PDF_CPU.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:35 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/PDF_CPU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PDF_CPU
+# -- Compiling architecture pdf of PDF_CPU
+# End time: 02:00:35 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/8_X_1_Demux_1_Bit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:35 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/8_X_1_Demux_1_Bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity demux_8x1_1bit
+# -- Compiling architecture beh of demux_8x1_1bit
+# End time: 02:00:35 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/zero_padding.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:35 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/zero_padding.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Gates
+# -- Compiling entity zero_padding
+# -- Compiling architecture struct of zero_padding
+# End time: 02:00:35 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/sixteen_bit_full_adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:35 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/sixteen_bit_full_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Gates
+# -- Compiling entity sixteen_bit_full_adder
+# -- Compiling architecture struct of sixteen_bit_full_adder
+# End time: 02:00:35 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/Multiplier.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:35 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/Multiplier.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Gates
+# -- Compiling entity multiplier
+# -- Compiling architecture struct of multiplier
+# End time: 02:00:35 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/full_adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:35 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/full_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Gates
+# -- Compiling entity full_adder
+# -- Compiling architecture struct of full_adder
+# End time: 02:00:35 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {E:/Semester_4/Microprocessor_Project/Testbench.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:00:35 on May 02,2025
+# vcom -reportprogress 300 -93 -work work E:/Semester_4/Microprocessor_Project/Testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity CPU_testbench
+# -- Compiling architecture behav of CPU_testbench
+# ** Warning: E:/Semester_4/Microprocessor_Project/Testbench.vhd(81): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: E:/Semester_4/Microprocessor_Project/Testbench.vhd(82): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: E:/Semester_4/Microprocessor_Project/Testbench.vhd(88): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 02:00:35 on May 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  CPU_Testbench
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" CPU_Testbench 
+# Start time: 02:00:35 on May 02,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.cpu_testbench(behav)
+# Loading work.pdf_cpu(pdf)
+# Loading work.datapath(beh)
+# Loading work.pipo_register(ha)
+# Loading work.d_ff(beh)
+# Loading work.mux_2x1(beh)
+# Loading work.gates
+# Loading work.sixteen_bit_full_adder(struct)
+# Loading work.xor_2(equations)
+# Loading work.full_adder(struct)
+# Loading work.nand_2(equations)
+# Loading work.register_file(str)
+# Loading work.mux_8x1_16bit(beh)
+# Loading work.demux_8x1_16bit(beh)
+# Loading work.demux_8x1_1bit(beh)
+# Loading work.mux_2x1_3bit(beh)
+# Loading work.shift_one(struct)
+# Loading work.mux_2x1_16bit(beh)
+# Loading work.mux_4x1_16bit(beh)
+# Loading work.pipo_register_3_bit(ha)
+# Loading work.alu(str)
+# Loading work.multiplier(struct)
+# Loading work.and_2(equations)
+# Loading work.zero_padding(struct)
+# Loading work.kogge_stone_adder_subtractor(str)
+# Loading work.kogge_stone(behav)
+# Loading work.preprocessing(behav)
+# Loading work.kogge_stone_node(struct)
+# Loading work.postprocessing(behav)
+# Loading work.shifter(design)
+# Loading work.shift_two(design)
+# Loading work.shift_four(design)
+# Loading work.shift_eight(design)
+# Loading ieee.std_logic_textio(body)
+# Loading work.controlpath(cpuarch)
+# Loading work.ring_buffer(rtl)
+# ** Warning: Design size of 17022 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: reset                reset                reset                reset               
+#    Time: 690 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: reset                reset                reset                reset               
+#    Time: 710 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: lw                   reset                reset                reset               
+#    Time: 730 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: Hazard detected 1!
+#    Time: 750 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: r1 r0 no no
+#    Time: 750 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: r0
+#    Time: 750 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 lw                   reset                reset               
+#    Time: 750 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 addi                 lw                   reset               
+#    Time: 770 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 addi                 addi                 lw                  
+#    Time: 790 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 addi                 addi                 addi                
+#    Time: 810 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: Hazard detected 1!
+#    Time: 830 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: r4 r4 r3 r2
+#    Time: 830 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: r4
+#    Time: 830 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 addi                 addi                 addi                
+#    Time: 830 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 addi                 addi                 addi                
+#    Time: 850 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 addi                 addi                 addi                
+#    Time: 870 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 addi                 addi                 addi                
+#    Time: 890 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: Hazard detected 1!
+#    Time: 910 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: r5 r5 r4 r4
+#    Time: 910 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: r5
+#    Time: 910 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 addi                 addi                 addi                
+#    Time: 910 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 addi                 addi                 addi                
+#    Time: 930 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 addi                 addi                 addi                
+#    Time: 950 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: shift_left_logical   addi                 addi                 addi                
+#    Time: 970 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: shift_left_logical   shift_left_logical   addi                 addi                
+#    Time: 990 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: shift_left_logical   shift_left_logical   shift_left_logical   addi                
+#    Time: 1010 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: shift_left_logical   shift_left_logical   shift_left_logical   shift_left_logical  
+#    Time: 1030 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: mul                  shift_left_logical   shift_left_logical   shift_left_logical  
+#    Time: 1050 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: mul                  mul                  shift_left_logical   shift_left_logical  
+#    Time: 1070 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: mul                  mul                  mul                  shift_left_logical  
+#    Time: 1090 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: jri                  mul                  mul                  mul                 
+#    Time: 1110 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: nop                  jri                  mul                  mul                 
+#    Time: 1130 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: nop                  nop                  jri                  mul                 
+#    Time: 1150 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: Hazard detected 1!
+#    Time: 1170 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: r2 r6 r3 r2
+#    Time: 1170 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: r2
+#    Time: 1170 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 nop                  nop                  jri                 
+#    Time: 1170 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: nop                  addi                 nop                  nop                 
+#    Time: 1190 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: nop                  nop                  addi                 nop                 
+#    Time: 1210 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: hlt                  nop                  nop                  addi                
+#    Time: 1230 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+add wave -position insertpoint  \
+sim:/cpu_testbench/CPU/Data_Memory/ram
+add wave -position insertpoint  \
+sim:/cpu_testbench/CPU/DP/RF/dout
+add wave -position insertpoint  \
+sim:/cpu_testbench/CPU/CP/hazard
+add wave -position insertpoint  \
+sim:/cpu_testbench/CPU/CP/stall_counter
+restart
+# ** Warning: Design size of 14789 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+run -all
+# ** Note: reset                reset                reset                reset               
+#    Time: 690 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: reset                reset                reset                reset               
+#    Time: 710 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: lw                   reset                reset                reset               
+#    Time: 730 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: Hazard detected 1!
+#    Time: 750 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: r1 r0 no no
+#    Time: 750 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: r0
+#    Time: 750 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 lw                   reset                reset               
+#    Time: 750 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 addi                 lw                   reset               
+#    Time: 770 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 addi                 addi                 lw                  
+#    Time: 790 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 addi                 addi                 addi                
+#    Time: 810 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: Hazard detected 1!
+#    Time: 830 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: r4 r4 r3 r2
+#    Time: 830 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: r4
+#    Time: 830 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 addi                 addi                 addi                
+#    Time: 830 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 addi                 addi                 addi                
+#    Time: 850 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 addi                 addi                 addi                
+#    Time: 870 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 addi                 addi                 addi                
+#    Time: 890 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: Hazard detected 1!
+#    Time: 910 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: r5 r5 r4 r4
+#    Time: 910 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: r5
+#    Time: 910 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 addi                 addi                 addi                
+#    Time: 910 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 addi                 addi                 addi                
+#    Time: 930 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 addi                 addi                 addi                
+#    Time: 950 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: shift_left_logical   addi                 addi                 addi                
+#    Time: 970 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: shift_left_logical   shift_left_logical   addi                 addi                
+#    Time: 990 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: shift_left_logical   shift_left_logical   shift_left_logical   addi                
+#    Time: 1010 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: shift_left_logical   shift_left_logical   shift_left_logical   shift_left_logical  
+#    Time: 1030 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: mul                  shift_left_logical   shift_left_logical   shift_left_logical  
+#    Time: 1050 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: mul                  mul                  shift_left_logical   shift_left_logical  
+#    Time: 1070 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: mul                  mul                  mul                  shift_left_logical  
+#    Time: 1090 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: jri                  mul                  mul                  mul                 
+#    Time: 1110 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: nop                  jri                  mul                  mul                 
+#    Time: 1130 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: nop                  nop                  jri                  mul                 
+#    Time: 1150 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: Hazard detected 1!
+#    Time: 1170 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: r2 r6 r3 r2
+#    Time: 1170 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: r2
+#    Time: 1170 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: addi                 nop                  nop                  jri                 
+#    Time: 1170 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: nop                  addi                 nop                  nop                 
+#    Time: 1190 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: nop                  nop                  addi                 nop                 
+#    Time: 1210 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# ** Note: hlt                  nop                  nop                  addi                
+#    Time: 1230 ns  Iteration: 0  Instance: /cpu_testbench/CPU/CP
+# End time: 02:03:28 on May 02,2025, Elapsed time: 0:02:53
+# Errors: 0, Warnings: 2

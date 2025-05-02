@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Fri May 02 02:00:24 2025
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : PDF_CPU
+Top-level Entity Name : PDF_CPU
+Family : MAX 10
+Total logic elements : 889
+    Total combinational functions : 789
+    Dedicated logic registers : 419
+Total registers : 419
+Total pins : 103
+Total virtual pins : 0
+Total memory bits : 512
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

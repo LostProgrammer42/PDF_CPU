@@ -1,0 +1,37 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity PDF_CPU is port (
+			rst,clk: in std_logic;
+			IMEM_Read, DMEM_Read, DMEM_Write: out std_logic;
+			Imem_Data_Read, Dmem_Data_Read: in std_logic_vector(15 downto 0);
+			Dmem_Data_Write: out std_logic_vector(15 downto 0)
+			); 
+end PDF_CPU;
+
+architecture pdf of PDF_CPU is
+	component datapath is
+		port (IMem_Data_Read: in std_logic_vector(15 downto 0);-- read wrt CPU
+				DMem_Data_Read: in std_logic_vector(15 downto 0);
+				DMem_Data_Write: out std_logic_vector(15 downto 0);
+				IMem_Address_Read: out std_logic_vector(15 downto 0);
+				rst,clk: in std_logic;
+				PC_En, IR_En, RF_En, R1_En, R2_En, R3_En, R4_En, R_ALU_En, RWB_En, R6_En, R5_En: in std_logic;
+				ALU_Sel: in std_logic_vector(1 downto 0);
+				RS_Sel, R2_Sel, RWB_Sel, Nxt_PC_Sel: in std_logic;
+				Instr: out std_logic_vector(15 downto 0)
+				); 
+	end component;
+	
+	component Controlpath is 
+		port (
+				rst,clk: in std_logic;
+				PC_En, IR_En, RF_En, R1_En, R2_En, R3_En, R4_En, R_ALU_En, RWB_En, R6_En, R5_En: out std_logic;
+				ALU_Sel: out std_logic_vector(1 downto 0);
+				RS_Sel, R2_Sel, RWB_Sel, Nxt_PC_Sel: out std_logic;
+				IMEM_Read, DMEM_Read, DMEM_Write: out std_logic;
+				Instruction: in std_logic_vector(15 downto 0)
+				); 
+	end component;
+

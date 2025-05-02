@@ -1,0 +1,49 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+
+entity shifter is
+	port(
+		a: in std_logic_vector(15 downto 0);
+		shift_amount: in std_logic_vector(3 downto 0);
+		b: out std_logic_vector(15 downto 0)
+	);
+end entity;
+
+architecture design of shifter is
+	
+	component shift_one is
+		port(
+				a: in std_logic_vector(15 downto 0);
+				en: in std_logic;
+				b: out std_logic_vector(15 downto 0)
+			);
+	end component;
+
+	component shift_two is
+		port(
+				a: in std_logic_vector(15 downto 0);
+				en: in std_logic;
+				b: out std_logic_vector(15 downto 0)
+			);
+	end component;
+
+	component shift_four is
+		port(
+				a: in std_logic_vector(15 downto 0);
+				en: in std_logic;
+				b: out std_logic_vector(15 downto 0)
+			);
+	end component;
+
+	component shift_eight is
+		port(
+				a: in std_logic_vector(15 downto 0);
+				en: in std_logic;
+				b: out std_logic_vector(15 downto 0)
+			);
+	end component;
+
+	begin
+	
+end architecture;

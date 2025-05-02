@@ -1,0 +1,125 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity datapath is
+	port (IMem_Data_Read: in std_logic_vector(15 downto 0);-- read wrt CPU
+			DMem_Data_Read: in std_logic_vector(15 downto 0);
+			DMem_Data_Write: out std_logic_vector(15 downto 0);
+			IMem_Address_Read: out std_logic_vector(15 downto 0);
+			rst,clk: in std_logic;
+			PC_En, IR_En, RF_En, R1_En, R2_En, R3_En, R4_En, R_ALU_En, RWB_En, R6_En, R5_En, PC_Store_En: in std_logic;
+			ALU_Sel, Nxt_PC_Sel: in std_logic_vector(1 downto 0);
+			RS_Sel, R2_Sel, RWB_Sel: in std_logic;
+			Instr: out std_logic_vector(15 downto 0)
+			); 
+end entity;
+
+architecture beh of datapath is
+	component ALU is
+		port (a,b : in std_logic_vector(15 downto 0); 
+				ALU_Sel: in std_logic_vector(1 downto 0); --1 for Add, 0 for Negate, 2 for MUL
+				c : out std_logic_vector(15 downto 0));
+	end component;
+	
+	component pipo_register is
+		port (din : in std_logic_vector(15 downto 0):="0000000000000000";
+				en, rst, clk : in std_logic;
+				dout : out std_logic_vector(15 downto 0):="0000000000000000");
+	end component;
+	
+	component pipo_register_3_bit is
+		port (din : in std_logic_vector(2 downto 0):="000";
+				en, rst, clk : in std_logic;
+				dout : out std_logic_vector(2 downto 0):="000");
+	end component;
+	
+	component mux_4x1_16bit is
+		port (I3,I2,I1,I0 : in std_logic_vector(15 downto 0); 
+				S : in std_logic_vector(1 downto 0); 
+				Y : out std_logic_vector(15 downto 0):="0000000000000000");
+	end component;
+
+	component mux_2x1_16bit is
+		port (I1, I0 : in std_logic_vector(15 downto 0); 
+				S : in std_logic; 
+				Y : out std_logic_vector(15 downto 0):="0000000000000000");
+	end component;
+	
+	component mux_2x1_3bit is
+		port (I1, I0 : in std_logic_vector(2 downto 0); 
+				S : in std_logic; 
+				Y : out std_logic_vector(2 downto 0):="000");
+	end component;
+	
+	component register_file is
+		port (a1, a2, a3 : in std_logic_vector(2 downto 0); --3 Bit address since 8 registers
+				d3 : in std_logic_vector(15 downto 0);
+				rst, clk, en : in std_logic;
+				d1, d2 : out std_logic_vector(15 downto 0));
+	end component;
+	
+	component sixteen_bit_full_adder is
+		port(
+				m: in std_logic;
+				a,b: in std_logic_vector(15 downto 0);
+				cout: out std_logic;
+				s: out std_logic_vector(15 downto 0));
+	end component;
+	
+	component shift_one is
+		port(
+				a: in std_logic_vector(15 downto 0);
+				en: in std_logic;
+				b: out std_logic_vector(15 downto 0)
+			);
+	end component;
+	
+	signal PC_Data_In, PC_Data_Out, IR_Data_In, IR_Data_Out, PC_Incremented, PC_Store_Data_Out, JI_Target: std_logic_vector(15 downto 0) := "ZZZZZZZZZZZZZZZZ";
+	signal Reg_Read_Data_1, Reg_Read_Data_2, Reg_Write_Data_1: std_logic_vector(15 downto 0);
+	signal Reg_Read_Address_1, Reg_Read_Address_2, Reg_Write_Address_1: std_logic_vector(2 downto 0);
+	
+	signal R1_Data_Out, R2_Data_Out, R_ALU_Data_Out, R2_Data_In, RWB_Data_In: std_logic_vector(15 downto 0);
+	signal R3_Data_Out, R5_Data_Out: std_logic_vector(2 downto 0);
+	signal Imm_6_Bit_SE, ALU_Out, Jmp_Address, Imm_9_Bit_SE_Mul_2, Imm_9_Bit_SE: std_logic_vector(15 downto 0);
+	begin
+		PC_Reg: pipo_register port map(din => PC_Data_In, en => PC_En, rst => rst, clk => clk, dout => PC_Data_Out);
+		IR_Reg: pipo_register port map(din => IR_Data_In, en => IR_En, rst => rst, clk => clk, dout => IR_Data_Out);
+		PC_Store_Reg: pipo_register port map(din => PC_Incremented, en => PC_Store_En, rst => rst, clk => clk, dout => PC_Store_Data_Out);
+		IMem_Address_Read <= PC_Data_Out;
+		IR_Data_In <= IMem_Data_Read;
+		Instr <= IMem_Data_Read;
+		
+		
+		Incrementer: sixteen_bit_full_adder port map(m => '0', a => PC_Data_Out, b => "0000000000000001", cout => open, s => PC_Incremented);
+		
+		RF: Register_File port map(a1 => Reg_Read_Address_1, a2 => Reg_Read_Address_2, a3 => Reg_Write_Address_1, d3 => Reg_Write_Data_1,
+											d1 => Reg_Read_Data_1, d2 => Reg_Read_Data_2, rst => rst, clk => clk, en => RF_En);
+		
+		Source_Reg_Mux: mux_2x1_3bit port map(I1 => IR_Data_Out(11 downto 9), I0 => IR_Data_Out(8 downto 6), S => RS_Sel, Y => Reg_Read_Address_1);
+		Reg_Read_Address_2 <= IR_Data_Out(5 downto 3);
+		
+		Imm_9_Bit_SE <= (6 downto 0 => IR_Data_Out(8)) & IR_Data_Out(8 downto 0);
+		Multiply_two_SE: shift_one port map(a=>Imm_9_Bit_SE, en=>'1' ,b=>Imm_9_Bit_SE_Mul_2);
+		JI_Target <= PC_Store_Data_Out(15 downto 9) & IR_Data_Out(8 downto 0); 
+		
+		Nxt_Address_Adder: sixteen_bit_full_adder port map(m => '0', a => R1_Data_Out, b => Imm_9_Bit_SE_Mul_2, cout => open, s => Jmp_Address);
+		Nxt_Address_Mux: mux_4x1_16bit port map(I3 => "ZZZZZZZZZZZZZZZZ", I2=> JI_Target, I1 => Jmp_Address, I0 => PC_Incremented, S => Nxt_PC_Sel, Y => PC_Data_In);
+		
+		R1: pipo_register port map(din => Reg_Read_Data_1, en => R1_En, rst => rst, clk => clk, dout => R1_Data_Out);
+		R2: pipo_register port map(din => R2_Data_In, en => R2_En, rst => rst, clk => clk, dout => R2_Data_Out);
+		R3: pipo_register_3_bit port map(din => IR_Data_Out(11 downto 9), en => R3_En, rst => rst, clk => clk, dout => R3_Data_Out);
+		
+		Imm_6_Bit_SE <= (9 downto 0 => IR_Data_Out(5)) & IR_Data_Out(5 downto 0);
+		R2_Data_Mux: mux_2x1_16bit port map(I1 => Reg_Read_Data_2, I0 => Imm_6_Bit_SE, S => R2_Sel, Y => R2_Data_In);
+		
+		Arithmetic_Unit: ALU port map(a => R1_Data_Out, b => R2_Data_Out, ALU_Sel => ALU_Sel, c => ALU_Out); 
+		
+		R4: pipo_register port map(din => R1_Data_Out, en => R4_En, rst => rst, clk => clk, dout => DMem_Data_Write);
+		R_ALU: pipo_register port map(din => ALU_Out, en => R_ALU_En, rst => rst, clk => clk, dout => R_ALU_Data_Out);
+		R5: pipo_register_3_bit port map(din => R3_Data_Out, en => R5_En, rst => rst, clk => clk, dout => R5_Data_Out);
+
+		RWB_Mux: mux_2x1_16bit port map(I1 => DMem_Data_Read, I0 => R_ALU_Data_Out, S => RWB_Sel, Y => RWB_Data_In);
+		RWB: pipo_register port map(din => RWB_Data_In, en => RWB_En, rst => rst, clk => clk, dout => Reg_Write_Data_1);
+		R6: pipo_register_3_bit port map(din => R5_Data_Out, en => R6_En, rst => rst, clk => clk, dout => Reg_Write_Address_1);
+end architecture;

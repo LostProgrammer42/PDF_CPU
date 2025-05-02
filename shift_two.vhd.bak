@@ -1,0 +1,17 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.Gates.all;
+
+entity shift_two is
+	port(
+		a: in std_logic_vector(15 downto 0);
+		b: out std_logic_vector(15 downto 0)
+	);
+end entity;
+
+architecture design of shift_two is
+begin
+	b(1 downto 0) <= "00";
+	b(15 downto 2) <= a(13 downto 0);
+end architecture;

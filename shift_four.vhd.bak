@@ -1,0 +1,17 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.Gates.all;
+
+entity shift_four is
+	port(
+		a: in std_logic_vector(15 downto 0);
+		b: out std_logic_vector(15 downto 0)
+	);
+end entity;
+
+architecture design of shift_four is
+begin
+	b(3 downto 0) <= "0000";
+	b(15 downto 4) <= a(11 downto 0);
+end architecture;

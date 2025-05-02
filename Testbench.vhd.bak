@@ -1,0 +1,104 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity CPU_testbench is
+end entity;
+
+architecture behav of CPU_testbench is
+	
+	component PDF_CPU is 
+		port (
+			rst,clk: in std_logic;
+			DMEM_Write, DMEM_Read: in std_logic;
+			IMEM_Read, DMEM_Read_CPU, DMEM_Write_CPU: out std_logic;
+			Imem_Data_Read, Dmem_Data_Write, Dmem_Data_Read_CPU: in std_logic_vector(15 downto 0);
+			Imem_Address_Read, Dmem_Data_Read, Dmem_Data_Write_CPU: out std_logic_vector(15 downto 0)
+			); 
+	end component;
+	
+	component mux_2x1 is
+		port (I1, I0 : in std_logic; 
+				S : in std_logic; 
+				Y : out std_logic);
+	end component;
+	
+	component mux_2x1_16bit is
+		port (I1, I0 : in std_logic_vector(15 downto 0); 
+				S : in std_logic; 
+				Y : out std_logic_vector(15 downto 0));
+	end component;
+
+	signal clk,rst: std_logic := '0';
+	
+	
+	
+	type regarray is array(40 downto 0) of std_logic_vector(15 downto 0);
+	signal Memory: regarray:=(
+		0 =>  "0000000000010101",       --lw r0
+		1 =>  "0101001001010111", 		  --addi r1,r1,23
+		2 =>  "0101010010000100",       --addi r2,r2,4
+		3 =>  "0101011011000111",		  --addi r3,r3,7
+		4 =>  "0101100100001100",       --addi r4,r4,12  
+		5 =>  "0101101101001101",       --addi r5,r5,13 
+		6 =>  "0110111001000000",       --sll r7,r1,r0
+		7 =>  "0100010010000101", 		  --mul r2,r2,r0
+		8 =>  "0100011011000101", 		  --mul r3,r3,r0
+		9 =>  "0100110000000001",			--mul r6,r0,r0
+		10 => "0111000000000110",     --jri r0,2 i.e. PC = (r0) + 12 = 15
+		11 => "0101001001010111",     -- addi r1,r1,23 (Should be jumped over)
+		12 => "0101100100010111",     -- addi r4,r4,23 (Should be jumped over)
+		15 => "0101010010000100" ,     --addi r2,r2, 4 (Should be executed)
+		others => "0000000000000000");
+		
+		
+	signal IMEM_Read, DMEM_Read, DMEM_Read_CPU, DMEM_Write_CPU, DMEM_Write, DMEM_Write_Testbench, DMEM_Read_Testbench: std_logic := '0';
+	signal Imem_Data_Read, Dmem_Data_Read: std_logic_vector(15 downto 0) := "ZZZZZZZZZZZZZZZZ";
+	signal Imem_Address_Read, Dmem_Data_Write_CPU, Dmem_Data_Write, Dmem_Data_Write_Testbench: std_logic_vector(15 downto 0) := "ZZZZZZZZZZZZZZZZ";
+	
+	signal DMEM_Control: std_logic;
+	begin
+		CPU: PDF_CPU port map(clk=>clk,rst=>rst, IMEM_Read => IMEM_Read , DMEM_Read_CPU => DMEM_Read_CPU, DMEM_Read => DMEM_Read, DMEM_Write_CPU => DMEM_Write_CPU, 
+		Imem_Data_Read => Imem_Data_Read, Dmem_Data_Read_CPU => Dmem_Data_Read, Dmem_Data_Read => Dmem_Data_Read, Imem_Address_Read=> Imem_Address_Read, Dmem_Data_Write_CPU => Dmem_Data_Write_CPU, 
+		Dmem_Data_Write => Dmem_Data_Write, DMEM_Write => DMEM_Write);
+		
+		MUX1: mux_2x1 port map (I1=>DMEM_Write_Testbench, I0=>DMEM_Write_CPU, Y=>DMEM_Write, S=>DMEM_Control);
+		MUX2: mux_2x1_16bit port map (I1=>Dmem_Data_Write_Testbench, I0=>Dmem_Data_Write_CPU, Y=>Dmem_Data_Write, S=>DMEM_Control);
+		MUX3: mux_2x1 port map (I1=>DMEM_Read_Testbench, I0=>DMEM_Read_CPU, Y=>DMEM_Read, S=>DMEM_Control);
+		
+		clk_process: process
+		begin
+			clk <= not clk after 10ns;
+			wait for 10ns;
+		end process clk_process;
+		
+		rst_process: process
+		begin
+			rst <= '1';
+			wait for 20ns;
+			rst <= '0';
+			wait;
+		end process;
+		
+		memory_init_process: process
+		begin
+			DMEM_Control <= '1';
+			DMEM_Write_Testbench <= '1';
+			Dmem_Data_Write_Testbench <= "0000000000000011";
+			wait for 20ns;
+			DMEM_Control <= '0';
+			wait;
+		end process;
+		
+		Mem_process: process(clk)
+		begin
+			if rising_edge(clk) then
+				if IMem_Read = '1' then
+					IMem_Data_Read <= Memory(to_integer(unsigned(Imem_Address_Read)));
+				else
+					IMem_Data_Read <= "ZZZZZZZZZZZZZZZZ";
+				end if;
+			end if;
+		end process;
+
+end architecture;
